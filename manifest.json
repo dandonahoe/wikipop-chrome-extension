@@ -1,0 +1,26 @@
+{
+    "name": "WikiPop",
+    "version": "1.0",
+    "description": "Popup definitions for wikipedia links",
+  
+    "content_scripts": 
+    [
+        {
+            "matches":
+            [
+                "http://en.wikipedia.org/*"
+            ],
+            "js": 
+            [
+                "jquery.js", 
+                "hoverIntent.js", 
+                "WikiPop.js"
+            ]
+        }
+    ],
+    
+    "permissions": 
+    [
+        "http://www.wikipedia.org/*"
+    ]
+}
